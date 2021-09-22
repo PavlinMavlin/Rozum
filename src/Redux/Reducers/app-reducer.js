@@ -16,7 +16,7 @@ export const appReducer = (state = initialState, action) => {
         case SET_EMPLOYEES_SUCCES:
             return {
                 ...state,
-                employees: action.employees
+                employees: action.employees.sort(((a, b) => a.lastName > b.lastName ? 1 : -1))
             }
         case SET_WORKLOG_SUCCES:
             return {

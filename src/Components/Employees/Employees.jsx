@@ -10,7 +10,7 @@ import {fetchEmployees} from "../../Redux/Reducers/app-reducer";
 
 export const Employees = React.memo((props) => {
 
-    const sortedEmployees = useSelector((state) => getSortedEmployees(state))
+    const employees = useSelector((state) => state.appReducer.employees)
     let loading = useSelector(state => state.appReducer.loading)
     const dispatch = useDispatch()
 
@@ -30,11 +30,11 @@ export const Employees = React.memo((props) => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {sortedEmployees.length === 0
+                        {employees.length === 0
                             ? <div>
                                 <span>Employees list is empty</span>
                             </div>
-                            : sortedEmployees.map(e =>
+                            : employees.map(e =>
                                 <TableRow key={e.id}>
                                     <TableCell align="center" scope="row">{e.id}</TableCell>
                                     <TableCell align="center">
