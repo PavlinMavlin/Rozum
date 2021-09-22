@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Rozum/static/css/main.8ac54da1.chunk.css",
+    "main.js": "/Rozum/static/js/main.e4102443.chunk.js",
+    "main.js.map": "/Rozum/static/js/main.e4102443.chunk.js.map",
+    "runtime-main.js": "/Rozum/static/js/runtime-main.1a928406.js",
+    "runtime-main.js.map": "/Rozum/static/js/runtime-main.1a928406.js.map",
+    "static/js/2.5249bfdf.chunk.js": "/Rozum/static/js/2.5249bfdf.chunk.js",
+    "static/js/2.5249bfdf.chunk.js.map": "/Rozum/static/js/2.5249bfdf.chunk.js.map",
+    "static/js/3.2361a9fb.chunk.js": "/Rozum/static/js/3.2361a9fb.chunk.js",
+    "static/js/3.2361a9fb.chunk.js.map": "/Rozum/static/js/3.2361a9fb.chunk.js.map",
+    "index.html": "/Rozum/index.html",
+    "static/css/main.8ac54da1.chunk.css.map": "/Rozum/static/css/main.8ac54da1.chunk.css.map",
+    "static/js/2.5249bfdf.chunk.js.LICENSE.txt": "/Rozum/static/js/2.5249bfdf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a928406.js",
+    "static/js/2.5249bfdf.chunk.js",
+    "static/css/main.8ac54da1.chunk.css",
+    "static/js/main.e4102443.chunk.js"
+  ]
+}
