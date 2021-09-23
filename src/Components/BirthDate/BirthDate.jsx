@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-export const BirthDate = (props) => {
+export const BirthDate = React.memo((props) => {
     const birth = new Date(props.birthDate);
-    const year = birth.getFullYear();
+    const year = birth.getFullYear().toString();
     const month = birth.getMonth().toString().padStart(2, 0);
     const date = birth.getDate().toString().padStart(2, 0);
     const turning = `${date}.${month}.${year}`;
@@ -11,4 +11,4 @@ export const BirthDate = (props) => {
     return (
         <div>{turning}</div>
     );
-};
+});
