@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {getFilteredWorklog} from "../../Utils/selectors";
-import {NavLink, useParams} from "react-router-dom";
-import TimeInterval from "../DeadLine/TimeInterval";
+import {useParams} from "react-router-dom";
+import TimeInterval from "../TimeInterval/TimeInterval";
 import {Table, TableBody, TableCell, TableContainer, TableRow} from "@material-ui/core";
 import {fetchWorklog} from "../../Redux/Reducers/app-reducer";
 import Paper from "@material-ui/core/Paper";

@@ -1,17 +1,16 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getSortedEmployees} from "../../Utils/selectors"
 import {NavLink} from "react-router-dom";
 import {Table, TableBody, TableCell, TableContainer, TableRow} from "@material-ui/core";
 import Paper from '@material-ui/core/Paper';
 import TableHead from '@material-ui/core/TableHead';
 import {fetchEmployees} from "../../Redux/Reducers/app-reducer";
+import {BirthDate} from "../BirthDate/BirthDate";
 
 
 export const Employees = React.memo((props) => {
 
     const employees = useSelector((state) => state.appReducer.employees)
-    let loading = useSelector(state => state.appReducer.loading)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -43,7 +42,7 @@ export const Employees = React.memo((props) => {
                                             {e.lastName + " " + e.firstName + " " + e.middleName}
                                         </NavLink>
                                     </TableCell>
-                                    <TableCell align="center">{e.birthDate}</TableCell>
+                                    <TableCell align="center"><BirthDate birthDate={e.birthDate}/></TableCell>
                                 </TableRow>)
                         }
                     </TableBody>

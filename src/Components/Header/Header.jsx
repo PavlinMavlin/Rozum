@@ -1,7 +1,6 @@
 import React from 'react';
-import {AppBar, IconButton, Toolbar, Typography,} from '@material-ui/core';
+import {AppBar, Toolbar, Typography,} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import {Menu} from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,8 +34,6 @@ export const Header = () => {
                         Hospital Department
                     </Typography>
                 </Toolbar>
-
-
             </AppBar>
         </header>
     );
